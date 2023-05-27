@@ -1,23 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-
+import PollDisplay from './PollDisplay.js';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 align="center">Polling App</h1>
+      <PollDisplay javascriptVote={1} pythonVote={3} javaVote={4} cVote={4}/>
+      
     </div>
   );
 }
