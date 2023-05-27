@@ -21,7 +21,7 @@ export default function UserParticipation(props){
                 {props.data.choices.map(options =>{
                     return(
                         <div key={options.id}>
-                            <input id={options.id} type="radio" onChange={handleValue} name="choice" value={options} /> 
+                            <input id={options.id} type="radio" onChange={handleValue} name="choice" value={options.label} /> 
                             <label htmlFor={options.id}>{options.label}</label>
                         </div>
                         
