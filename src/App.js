@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import PollDisplay from './PollDisplay.js';
 import UserParticipation from './UserParticipation';
+import AnotherParticipation from './AnotherUserParticipation';
 class App extends React.Component {
   
   constructor(props){
@@ -30,6 +31,7 @@ class App extends React.Component {
         <h1 align="center">Polling App</h1>
         <PollDisplay data={this.state}/>
         <UserParticipation data={this.state} incrementVote={this.handleVoteIncrement}/>
+        <AnotherParticipation/>
       </div>
    );
    }
